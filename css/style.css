@@ -1,0 +1,23 @@
+body {
+  font-size: 17px;
+  line-height: 17px;
+  color: #000000;
+  font-weight: normal;
+  font-family: Cuprum;
+}
+
+.popular-goods-title,
+.popular-producers-title,
+.catalog-content-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+
+.services-title,
+.about-us-title,
+.contacts-title,
+.tool-desc-title {
+  font-size: 30px;
+  line-height: 24px;
+}

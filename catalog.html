@@ -3,36 +3,33 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
       <div class="container">
-        <div class="top-block">
-          <a href="index.html" title="На главную">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Техномарт">
-          </a>
-          <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
-            <ul class="user-block">
-              <li>
-                <label>
-                  Поиск:
-                  <input type="search" name="search" value="">
-                </label>
-              </li>
-              <li>
-                Закладки:
-              </li>
-              <li>
-                Корзина:
-              </li>
-              <li>
-                <a href="#" title="Оформить заказ">
-                  Оформить заказ
-                </a>
-              </li>
-            </ul>
-          </form>
-        </div>
+        <ul class="top-block">
+          <li>
+            <a href="index.html" title="Техномарт">Техномарт</a>
+          </li>
+          <li>
+            <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
+              <label>
+                Поиск:
+                <input type="search" name="search" value="">
+              </label>
+            </form>
+          </li>
+          <li>
+            <a href="#" title="Закладки">Закладки:</a>
+          </li>
+          <li>
+            <a href="#" title="Корзина">Корзина:</a>
+          </li>
+          <li>
+            <a href="#" title="Оформить заказ">Оформить заказ</a>
+          </li>
+        </ul>
         <div class="middle-block">
           <div class="middle-block-desc">
             <p>Интернет-магазин
@@ -167,77 +164,57 @@
         </ul>
       </div>
       <div class="catalog-tools">
-        <ul class="catalog-tools-list">
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 3000
-              <span class="catalog-tools-old-price">22500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">15500 Р.</a>
-          </li>
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 6000
-              <span class="catalog-tools-old-price">30500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">25500 Р.</a>
-          </li>
-          <li class="new-tool">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 2000
-            </div>
-            <a class="catalog-tools-new-price" href="#">12500 Р.</a>
-          </li>
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 3000
-              <span class="catalog-tools-old-price">22500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">15500 Р.</a>
-          </li>
-          <li class="new-tool">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 6000
-              <span class="catalog-tools-old-price">30500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">25500 Р.</a>
-          </li>
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 2000
-            </div>
-            <a class="catalog-tools-new-price" href="#">12500 Р.</a>
-          </li>
-          <li class="new-tool">
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 3000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 3000
-              <span class="catalog-tools-old-price">22500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">15500 Р.</a>
-          </li>
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 6000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 6000
-              <span class="catalog-tools-old-price">30500 Р.</span>
-            </div>
-            <a class="catalog-tools-new-price" href="#">25500 Р.</a>
-          </li>
-          <li>
-            <img src="http://placehold.it/150x100" width="150" height="100" alt="Перфоратор Bosch BFG 2000">
-            <div class="catalog-tools-mark">
-              Перфоратор Bosch BFG 2000
-            </div>
-            <a class="catalog-tools-new-price" href="#">12500 Р.</a>
-          </li>
-        </ul>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-3000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 3000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 3000</span>
+          <span class="item-card-old-price">22500 Р.</span>
+          <a class="item-card-new-price" href="#">15500 Р.</a>
+        </div>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-6000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 6000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 6000</span>
+          <span class="item-card-old-price">30500 Р.</span>
+          <a class="item-card-new-price" href="#">25500 Р.</a>
+        </div>
+        <div class="item-card new">
+          <img src="img\index-bosch-bfg-2000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 2000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 2000</span>
+          <a class="item-card-new-price" href="#">12500 Р.</a>
+        </div>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-3000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 3000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 3000</span>
+          <span class="item-card-old-price">22500 Р.</span>
+          <a class="item-card-new-price" href="#">15500 Р.</a>
+        </div>
+        <div class="item-card new">
+          <img src="img\index-bosch-bfg-6000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 6000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 6000</span>
+          <span class="item-card-old-price">30500 Р.</span>
+          <a class="item-card-new-price" href="#">25500 Р.</a>
+        </div>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-2000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 2000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 2000</span>
+          <a class="item-card-new-price" href="#">12500 Р.</a>
+        </div>
+        <div class="item-card new">
+          <img src="img\index-bosch-bfg-3000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 3000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 3000</span>
+          <span class="item-card-old-price">22500 Р.</span>
+          <a class="item-card-new-price" href="#">15500 Р.</a>
+        </div>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-6000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 6000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 6000</span>
+          <span class="item-card-old-price">30500 Р.</span>
+          <a class="item-card-new-price" href="#">25500 Р.</a>
+        </div>
+        <div class="item-card">
+          <img src="img\index-bosch-bfg-2000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 2000">
+          <span class="item-card-mark">Перфоратор Bosch BFG 2000</span>
+          <a class="item-card-new-price" href="#">12500 Р.</a>
+        </div>
       </div>
       <div class="catalog-pagination">
         <ul class="catalog-pagination-list">
@@ -255,8 +232,8 @@
           </li>
         </ul>
       </div>
-      <div class="tool-desc">
-        <h2>Пара слов о перфораторах</h2>
+      <div class="catalog-tool-desc">
+        <h2 class="tool-desc-title">Пара слов о перфораторах</h2>
         <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
         Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В
       ассортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
@@ -264,9 +241,7 @@
     </main>
     <footer class="main-footer">
       <div class="container">
-        <a href="index.html" title="На главную">
-          <img src="http://placehold.it/150x100" width="150" height="100" alt="Техномарт">
-        </a>
+        <a href="index.html" title="Техномарт">Техномарт</a>
         <div class="footer-contacts">
           г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
           +7 (812) 555-05-55

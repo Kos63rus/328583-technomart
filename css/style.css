@@ -43,7 +43,7 @@ body {
   background-color: #ba2732;
 }
 
-.item-card .flag {
+.flag {
   position: absolute;
   top: -1px;
   right: -1px;
@@ -63,18 +63,17 @@ body {
   display: inline-block;
   box-sizing: border-box;
   width: 220px;
-  min-height: 320px;
+  min-height: 318px;
   margin-right: 20px;
   margin-bottom: 20px;
   line-height: 20px;
+  font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   font-weight: bold;
   border: 1px solid #e5e5e5;
 }
 
-.item-card:last-child {
-  margin-right: 0;
-}
+
 /*^^Широко применяемые стили^^*/
 
 .popular-goods-title,
@@ -563,7 +562,7 @@ body {
   width: 940px;
   min-height: 400px;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 53px;
   /*outline: 1px solid orange;*/
 }
 
@@ -595,7 +594,7 @@ body {
   width: 300px;
   min-height: 123px;
   margin-bottom: 20px;
-  padding-top: 23px;
+  padding-top: 20px;
   padding-left: 23px;
   /*outline: 1px solid green;*/
 }
@@ -605,7 +604,7 @@ body {
   box-sizing: border-box;
   width: 135px;
   min-height: 38px;
-  margin-top: 15px;
+  margin-top: 12px;
   margin-left: 2px;
   padding: 10px 0;
   font-size: 14px;
@@ -708,13 +707,14 @@ body {
 }
 
 .slide-content {
-  margin-top: 20px;
-  margin-left: 26px;
+  margin-top: 18px;
+  margin-left: 24px;
 }
 
 .slide-title {
   margin: 0;
   padding: 0;
+  margin-bottom: -2px;
   font-size: 36px;
   line-height: 44px;
   font-weight: bold;
@@ -761,6 +761,11 @@ body {
   margin-right: 20px;
   color: #ffffff;
   background-color: #f6b22d;
+}
+
+.materials .flag {
+  top: 0;
+  right: 0;
 }
 
 .materials::after {
@@ -858,7 +863,7 @@ body {
   justify-content: space-between;
   align-items: center;
   width: 940px;
-  min-height: 90px;
+  min-height: 89px;
   margin-bottom: 20px;
   background-color: #f7f3ec;
   /*outline: 1px solid green;*/
@@ -880,6 +885,14 @@ body {
 }
 
 /*Оформление карточки товара*/
+.item-card:last-child {
+  margin-right: 0;
+}
+
+.item-card:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
 .item-card .actions {
   position: absolute;
   top: 0;
@@ -982,7 +995,7 @@ body {
 
 .item-card-discount {
   min-height: 20px;
-  margin-top: 15px;
+  margin-top: 10px;
   margin-bottom: 10px;
   text-decoration: line-through;
   color: #999999;
@@ -993,7 +1006,7 @@ body {
   width: 80px;
   margin: 10px auto;
   margin-bottom: 20px;
-  padding: 10px 30px;
+  padding: 9px 30px;
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px;
@@ -1019,10 +1032,22 @@ body {
 }
 
 .popular-producers-list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
   width: 220px;
   min-height: 145px;
   margin-right: 20px;
-  outline: 1px solid green;
+  border: 1px solid #e7e7e7;
+}
+
+.popular-producers-list a:hover {
+  box-shadow: 0 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-list a:active {
+  box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
 .popular-producers-list a:nth-of-type(1),
@@ -1098,6 +1123,22 @@ body {
   width: 400px;
   outline: 1px solid red;
 }
+
+/*Табы для блока сервисов*/
+.services-tabs section {
+  display: none;
+}
+
+.tabs input {
+  display: none;
+}
+
+#tab-1:checked ~ #content-1,
+#tab-2:checked ~ #content-2,
+#tab-3:checked ~ #content-3 {
+  display: block;
+}
+/*^^Табы для блока сервисов^^*/
 
 .index-about-us-block {
   display: flex;

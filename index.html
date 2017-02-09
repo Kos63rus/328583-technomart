@@ -72,7 +72,7 @@
       <div class="index-promo-block">
         <div class="index-promo-block-left">
           <div class="promo-block materials">
-            <span class="new"></span>
+            <div class="flag flag-new"></div>
             <h2 class="promo-block-title">
               Материалы
             </h2>
@@ -145,7 +145,7 @@
           <div class="image">
             <img src="img\index-bosch-bfg-9000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 9000">
           </div>
-          <div class="item-card-title">Перфоратор Bosch BFG 9000</div>
+          <div class="item-card-title">Перфоратор BOSCH BFG 9000</div>
           <div class="item-card-discount">32500 Р.</div>
           <div class="item-card-price">25500 Р.</div>
         </div>
@@ -158,7 +158,7 @@
           <div class="image">
             <img src="img\index-bosch-bfg-3000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 3000">
           </div>
-          <div class="item-card-title">Перфоратор Bosch BFG 3000</div>
+          <div class="item-card-title">Перфоратор BOSCH BFG 3000</div>
           <div class="item-card-discount">22500 Р.</div>
           <div class="item-card-price" href="#">15500 Р.</div>
         </div>
@@ -171,7 +171,7 @@
           <div class="image">
             <img src="img\index-bosch-bfg-6000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 6000">
           </div>
-          <div class="item-card-title">Перфоратор Bosch BFG 6000</div>
+          <div class="item-card-title">Перфоратор BOSCH BFG 6000</div>
           <div class="item-card-discount">30500 Р.</div>
           <div class="item-card-price" href="#">25500 Р.</div>
         </div>
@@ -184,7 +184,7 @@
           <div class="image">
             <img src="img\index-bosch-bfg-2000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 2000">
           </div>
-          <div class="item-card-title">Перфоратор Bosch BFG 2000</div>
+          <div class="item-card-title">Перфоратор BOSCH BFG 2000</div>
           <div class="item-card-discount"></div>
           <div class="item-card-price" href="#">12500 Р.</div>
         </div>
@@ -229,21 +229,18 @@
           <p>Хороший интернет-магазин отличается от плохого не только ценами!
             Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
         </div>
-        <div class="index-servises-menu">
-          <ul class="services-list">
-            <li>
-              <a href="#">Доставка</a>
-            </li>
-            <li>
-              <a href="#">Гарантия</a>
-            </li>
-            <li>
-              <a href="#">Кредит</a>
-            </li>
-          </ul>
+        <div class="index-servises-tabs">
+          <div class="tabs">
+            <input type="radio" name="tabs" id="tab-1" checked>
+            <label for="tab-1">Доставка</label>
+            <input type="radio" name="tabs" id="tab-2">
+            <label for="tab-2">Гарантия</label>
+            <input type="radio" name="tabs" id="tab-3">
+            <label for="tab-3">Кредит</label>
+          </div>
           <!-- <img src="img\services-menu-border-right.png" width="10" height="272" alt="Доставка"> -->
           <div class="services-tabs">
-            <div class="services-delivery tab">
+            <section class="delivery-content tab" id="content-1">
               <div class="services-text">
                 <h2 class="services-desc-title">Доставка</h2>
                 <p>Мы с удовольствием доставим ваш товар прямо
@@ -252,8 +249,8 @@
                   поднимая его на ваш этаж!</p>
               </div>
               <img src="img\index-delivery-car.jpg" width="468" height="261" alt="Доставка">
-            </div>
-            <div class="services-guarantee tab">
+            </section>
+            <section class="guarantee-content tab" id="content-2">
               <div class="services-text">
                 <h2 class="services-desc-title">Гарантия</h2>
                 <p>Если купленный у нас товар поломается или заискрит,
@@ -263,8 +260,8 @@
                   Дом уж восстановите как-нибудь сами.</p>
               </div>
               <img src="img\index-guarantee.jpg" width="389" height="283" alt="Гарантия">
-            </div>
-            <div class="services-credit tab">
+            </section>
+            <section class="credit-content tab" id="content-3">
               <div class="services-text">
                 <h2 class="services-desc-title">Кредит</h2>
                 <p>Залезть в долговую яму стало проще!
@@ -272,7 +269,7 @@
                 <a href="#" title="Отправить заявку">Отправить заявку</a>
               </div>
               <img src="img\index-credit.jpg" width="465" height="285" alt="Кредит">
-            </div>
+            </section>
           </div>
         </div>
       </div>

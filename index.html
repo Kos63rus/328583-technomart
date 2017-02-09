@@ -3,39 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css\normalize.css" rel="stylesheet">
     <link href="css\style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <ul class="header-top-block">
-        <div class="container">
-        <li>
-          <a href="index.html" title="Техномарт">Техномарт</a>
-        </li>
-        <li>
-          <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Поиск:
-              <input type="search" name="search" value="">
-            </label>
-          </form>
-        </li>
-        <li>
-          <a href="#" title="Закладки">Закладки:</a>
-        </li>
-        <li>
-          <a href="#" title="Корзина">Корзина:</a>
-        </li>
-        <li>
-          <a href="#" title="Оформить заказ">Оформить заказ</a>
-        </li>
-        </div>
-      </ul>
+      <div class="header-top-block-wrapper">
+        <ul class="header-top-block">
+          <li>
+            <a href="index.html" title="Техномарт">Техномарт</a>
+           </li>
+          <li>
+            <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" value="" placeholder="Поиск:">
+              <span class="search-icon"></span>
+            </form>
+          </li>
+          <li>
+            <a href="#" title="Закладки">Закладки: 0</a>
+          </li>
+          <li>
+            <a href="#" title="Корзина">Корзина: 0</a>
+          </li>
+          <li>
+            <a href="#" title="Оформить заказ">
+              <span class="index-сheckout">Оформить заказ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="container">
         <div class="header-middle-block">
           <div class="header-middle-block-desc">
             <p>Интернет-магазин
-              строительных материалов
+              строительных материалов<br>
               и инструментов для ремонта</p>
           </div>
           <div class="header-middle-block-contacts">
@@ -47,34 +49,22 @@
             </div>
           </div>
           <div class="header-middle-block-registration">
-            <a href="#" title="Войти">Войти</a>
-            <a href="#" title="Регистрация">Регистрация</a>
+            <div class="login-wrapper">
+              <a class="login" href="#" title="Войти">Войти</a>
+            </div>
+            <div class="registration-wrapper">
+              <a class="registration" href="#" title="Регистрация">Регистрация</a>
+            </div>
           </div>
         </div>
         <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li>
-              <a href="#" title="Главная">Главная</a>
-            </li>
-            <li>
-              <a href="#" title="Компания">Компания</a>
-            </li>
-            <li>
-              <a href="#" title="Каталог">Каталог</a>
-            </li>
-            <li>
-              <a href="#" title="Новости">Новости</a>
-            </li>
-            <li>
-              <a href="#" title="Спецпредложения">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#" title="Доставка">Доставка</a>
-            </li>
-            <li>
-              <a href="#" title="Контакты">Контакты</a>
-            </li>
-          </ul>
+          <a href="#" title="Главная">Главная</a>
+          <a href="#" title="Компания">Компания</a>
+          <a href="#" title="Каталог">Каталог</a>
+          <a href="#" title="Новости">Новости</a>
+          <a href="#" title="Спецпредложения">Спецпредложения</a>
+          <a href="#" title="Доставка">Доставка</a>
+          <a href="#" title="Контакты">Контакты</a>
         </nav>
       </div>
     </header>
@@ -85,7 +75,7 @@
             <h2 class="promo-block-title">
               Материалы
             </h2>
-            <a href="#" title="На любой вкус">На любой вкус</a>
+              <a href="#" title="На любой вкус">На любой вкус</a>
           </div>
           <div class="promo-block tools">
             <h2 class="promo-block-title">
@@ -123,7 +113,7 @@
           <h2 class="popular-goods-title">
             Популярные товары:
           </h2>
-          <a href="#">Все популярные товары</a>
+          <a class="btn" href="#">Все популярные товары</a>
         </div>
         <div class="item-card">
           <img src="img\index-bosch-bfg-9000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 9000">
@@ -154,7 +144,7 @@
           <h2 class="popular-producers-title">
             Популярные производители:
           </h2>
-          <a href="#">Все популярные товары</a>
+          <a class="btn" href="#">Все производители</a>
         </div>
         <div class="popular-producers-list">
           <a href="#" title="Bosch">

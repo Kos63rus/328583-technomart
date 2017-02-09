@@ -72,6 +72,7 @@
       <div class="index-promo-block">
         <div class="index-promo-block-left">
           <div class="promo-block materials">
+            <span class="new"></span>
             <h2 class="promo-block-title">
               Материалы
             </h2>
@@ -83,8 +84,28 @@
             </h2>
             <a href="#" title="На все случаи">На все случаи</a>
           </div>
-          <div class="index-slider">
-            <a href="#">Открыть каталог</a>
+          <div class="index-promo-slider">
+            <input type="radio" id="slider-btn-1" name="toggle" checked>
+            <input type="radio" id="slider-btn-2" name="toggle">
+            <div class="promo-slider-controls">
+              <label for="slider-btn-1"></label>
+              <label for="slider-btn-2"></label>
+            </div>
+            <div class="promo-slides">
+              <div class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">Перфораторы</h2>
+                  <span class="slide-text">Настоящие мужские игрушки</span>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide-content">
+                  <h2 class="slide-title">Дрели</h2>
+                  <span class="slide-text">Соседям на радость!</span>
+                </div>
+              </div>
+            </div>
+            <a class="btn slider-open-catalog" href="#">Открыть каталог</a>
           </div>
         </div>
         <div class="index-promo-block-right">
@@ -133,7 +154,8 @@
           <span class="item-card-old-price">30500 Р.</span>
           <a class="item-card-new-price" href="#">25500 Р.</a>
         </div>
-        <div class="item-card new">
+        <div class="item-card">
+          <span class="new"></span>
           <img src="img\index-bosch-bfg-2000.jpg" width="220" height="158" alt="Перфоратор Bosch BFG 2000">
           <span class="item-card-mark">Перфоратор Bosch BFG 2000</span>
           <a class="item-card-new-price" href="#">12500 Р.</a>

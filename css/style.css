@@ -1185,7 +1185,7 @@ body {
   margin-top: 77px;
   color: #000000;
   background-color: #ffffff;
-  outline: 1px solid orange;
+  /*outline: 1px solid orange;*/
 }
 
 /*Компания Техномарт*/
@@ -1295,59 +1295,227 @@ body {
   margin-bottom: 37px;
 }
 
+/*Футер*/
+
 .main-footer {
   display: flex;
   flex-wrap: wrap;
   width: 1200px;
   margin: 0 auto;
-  outline: 1px solid green;
+  color: #ffffff;
+  background-color: #32425c;
+  /*outline: 1px solid green;*/
+}
+
+.main-footer a {
+  color: #ffffff;
+  text-decoration: none;
 }
 
 .footer-top-block {
   display: flex;
   width: 940px;
   min-height: 190px;
-  outline: 1px solid orange;
+  /*outline: 1px solid orange;*/
 }
 
 .footer-top-block-left-part {
   width: 380px;
   margin-right: 10px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
+}
+
+.footer-top-block-left-part a:first-child {
+  display: block;
+  box-sizing: border-box;
+  width: 220px;
+  height: 63px;
+  margin-bottom: 35px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+  box-shadow: 0 5px 0 0 #b52933;
+}
+
+.footer-top-block-left-part a:first-child:hover {
+  background-color: #ca2c37;
+  box-shadow: 0 5px 0 0 #9a212a;
+}
+
+.footer-top-block-left-part a:first-child:active {
+  background-color: #ba2732;
+  box-shadow: 0 5px 0 0 #8e1e26;
+}
+
+.footer-top-block-left-part .footer-contacts {
+  width: 350px;
+  min-height: 44px;
+  padding-left: 3px;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+  color: #ffffff;
 }
 
 .footer-top-block-right-part {
   width: 550px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
+}
+
+.footer-top-block-right-part a {
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.main-footer-cite-nav {
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 550px;
+  margin-top: 39px;
+  margin-bottom: 40px;
+  padding-left: 3px;
+  /*outline: 1px solid red;*/
+}
+
+.main-footer-goods-nav {
+  display: inline-flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 550px;
+  padding-left: 26px;
+  /*outline: 1px solid red;*/
+}
+
+.main-footer-goods-nav a {
+  color: #ffd180;
+}
+
+.main-footer-cite-nav a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.main-footer-goods-nav a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.main-footer-cite-nav a:active {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.main-footer-goods-nav a:active {
+  color: #ffd180;
+  text-decoration: none;
+  opacity: 0.5;
 }
 
 .footer-bottom-block {
+  width: 1200px;
+  min-height: 107px;
+  font-size: 16px;
+  line-height: 18px;
+  background-color: #293449;
+  /*outline: 1px solid orange;*/
+}
+
+.footer-bottom-block .container {
   display: flex;
-  width: 940px;
-  min-height: 110px;
-  outline: 1px solid orange;
+  min-height: 107px;
+  /*outline: 1px solid red;*/
 }
 
 .main-copyright {
-  width: 300px;
-  margin-right: 80px;
-  outline: 1px solid green;
+  width: 240px;
+  margin-top: 35px;
+  margin-right: 140px;
+  /*outline: 1px solid green;*/
 }
 
 .socials {
+  box-sizing: border-box;
   width: 240px;
+  min-height: 41px;
+  margin-top: 35px;
   margin-right: 20px;
-  outline: 1px solid green;
+  padding-left: 10px;
+  /*outline: 1px solid green;*/
+}
+
+.socials .social-btn {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0 2px;
+  font-size: 0;
+  vertical-align: top;
+  text-decoration: none;
+  background-color: #212a3a;
+  border-radius: 50%;
+  /*outline: 1px solid red;*/
+}
+
+.socials .social-btn-vk {
+  background-image: url("../img/spritesheet-socials.png");
+  background-position: -116px -5px;
+}
+
+.socials .social-btn-fb {
+  background-image: url("../img/spritesheet-socials.png");
+  background-position: -4px -8px;
+}
+
+.socials .social-btn-ig {
+  background-image: url("../img/spritesheet-socials.png");
+  background-position: -57px -7px;
+}
+
+.socials .social-btn:hover {
+  background-color: #ee3643;
+}
+
+.socials .social-btn:active {
+  background-color: #ee3643;
 }
 
 .main-feedback {
   width: 160px;
-  outline: 1px solid green;
+  margin-top: 35px;
+  margin-right: 30px;
+  /*outline: 1px solid green;*/
 }
 
 .main-developed {
-  width: 140px;
-  outline: 1px solid green;
+  width: 110px;
+  margin-top: 35px;
+  /*outline: 1px solid green;*/
+}
+
+.main-feedback a,
+.main-developed a {
+  color: #ffd180;
+}
+
+.main-feedback a:hover,
+.main-developed a:hover {
+  color: #ffd180;
+  text-decoration: underline;
+}
+
+.main-feedback a:active,
+.main-developed a:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 /*^^Сетка главной страницы^^*/
 
@@ -1799,4 +1967,29 @@ body {
     width: 60px;
     height: 59px;
     background-position: -248px -170px;
+}
+
+/*Спрайты соц сетей*/
+.sprite {
+    background-image: url("spritesheet-socials.png");
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -20px -20px;
+}
+
+.sprite-icon-ig {
+    width: 17px;
+    height: 17px;
+    background-position: -70px -20px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -127px -20px;
 }

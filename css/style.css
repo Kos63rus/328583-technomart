@@ -1131,17 +1131,79 @@ body {
   outline: 1px solid green;
 }
 
+.index-servises-tabs input[type="radio"] {
+  opacity: 1;
+}
+
 .tab-controls {
+  position: relative;
   align-self: flex-start;
+  display: flex;
+  flex-wrap: wrap;
   width: 240px;
   margin: 0;
   margin-top: 50px;
   margin-right: 80px;
   padding: 0;
-  outline: 1px solid red;
+  list-style: none;
+  /*outline: 1px solid red;*/
 }
 
-.services-tabs {
+.tab-controls::after {
+  position: absolute;
+  top: -50px;
+  right: 0;
+  content: "";
+  width: 10px;
+  height: 272px;
+  background: url("../img/index-services-menu-shadow.png") no-repeat 0 0;
+  /*outline: 1px solid red;*/
+}
+
+.tab-controls li {
+  box-sizing: border-box;
+  width: 240px;
+  height: 62px;
+  /*outline: 1px solid blue;*/
+}
+
+.tab-controls label {
+  display: block;
+  padding-top: 15px;
+  padding-left: 23px;
+  padding-bottom: 15px;
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  background-color: #32425c;
+  border-top: 1px solid #405069;
+  border-bottom: 1px solid #293449;
+  cursor: pointer;
+}
+
+.tab-controls label:hover {
+  color: #ffffff;
+  background-color: #293449;
+}
+
+.tab-controls label:active {
+  color: #32425c;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+#btn1:checked ~ .tab-controls label[for="btn1"],
+#btn2:checked ~ .tab-controls label[for="btn2"],
+#btn3:checked ~ .tab-controls label[for="btn3"] {
+  color: #32425c;
+  background-color: #ffffff;
+  border-color: #ffffff;
+}
+
+
+.tab-content {
   position: relative;
   width: 620px;
   min-height: 279px;
@@ -1151,13 +1213,35 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
 }
 
 .delivery-content {
   width: 100%;
-  min-height: 279px;
+  height: 100%;
   margin: 0;
   padding: 0;
+  background: url("../img/index-delivery-car.jpg") no-repeat 150px 50px;
+  outline: 1px solid blue;
+}
+
+.guarantee-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/index-guarantee.jpg") no-repeat 230px 50px;
+  outline: 1px solid blue;
+}
+
+.credit-content {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: url("../img/index-credit.jpg") no-repeat 152px 50px;
   outline: 1px solid blue;
 }
 
@@ -1166,15 +1250,24 @@ body {
   outline: 1px solid red;
 }
 
-/*Механика работы табов*/
-.tab {
+/*Механика работы табов на инпутах*/
+.tab-content .tab {
   display: none;
 }
 
-#tab-1:checked ~ .services-tabs .tab:nth-of-type(1) {
+#btn1:checked ~ .tab-content .tab:nth-child(1) {
   display: block;
 }
-/*^^Механика работы табов^^*/
+
+#btn2:checked ~ .tab-content .tab:nth-child(2) {
+  display: block;
+}
+
+#btn3:checked ~ .tab-content .tab:nth-child(3) {
+  display: block;
+}
+/*^^Механика работы табов на инпутах^^*/
+
 
 /*^^Табы для блока сервисов^^*/
 

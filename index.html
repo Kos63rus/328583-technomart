@@ -233,20 +233,22 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
           </div>
           <div class="index-servises-tabs">
-            <!-- Встраиваю табы -->
-
-
-            <!-- Встраиваю табы -->
-            <div class="tab-controls">
-              <input type="radio" name="tabs" id="tab-1" checked>
-              <label for="tab-1">Доставка</label>
-              <input type="radio" name="tabs" id="tab-2">
-              <label for="tab-2">Гарантия</label>
-              <input type="radio" name="tabs" id="tab-3">
-              <label for="tab-3">Кредит</label>
-            </div>
-            <div class="services-tabs">
-              <section class="delivery-content tab" id="content-1">
+            <input type="radio" id="btn1" name="tabs" checked>
+            <input type="radio" id="btn2" name="tabs">
+            <input type="radio" id="btn3" name="tabs">
+            <ul class="tab-controls">
+              <li>
+                <label for="btn1">Доставка</label>
+              </li>
+              <li>
+                <label for="btn2">Гарантия</label>
+              </li>
+              <li>
+                <label for="btn3">Кредит</label>
+              </li>
+            </ul>
+            <div class="tab-content">
+              <section class="delivery-content tab" id="frame1">
                 <div class="services-text">
                   <h2 class="services-desc-title">Доставка</h2>
                   <p>Мы с удовольствием доставим ваш товар прямо
@@ -254,9 +256,9 @@
                     Ведь мы неплохо заработаем,
                     поднимая его на ваш этаж!</p>
                 </div>
-                <img src="img\index-delivery-car.jpg" width="468" height="261" alt="Доставка">
+                <!-- <img src="img\index-delivery-car.jpg" width="468" height="261" alt="Доставка"> -->
               </section>
-              <section class="guarantee-content tab">
+              <section class="guarantee-content tab" id="frame2">
                 <div class="services-text">
                   <h2 class="services-desc-title">Гарантия</h2>
                   <p>Если купленный у нас товар поломается или заискрит,
@@ -265,16 +267,16 @@
                     сгоревший товар на новый.
                     Дом уж восстановите как-нибудь сами.</p>
                 </div>
-                <img src="img\index-guarantee.jpg" width="389" height="283" alt="Гарантия">
+                <!-- <img src="img\index-guarantee.jpg" width="389" height="283" alt="Гарантия"> -->
               </section>
-              <section class="credit-content tab">
+              <section class="credit-content tab" id="frame3">
                 <div class="services-text">
                   <h2 class="services-desc-title">Кредит</h2>
                   <p>Залезть в долговую яму стало проще!
                     Кредитные консультанты придут вам на помощь.</p>
                   <a href="#" title="Отправить заявку">Отправить заявку</a>
                 </div>
-                <img src="img\index-credit.jpg" width="465" height="285" alt="Кредит">
+                <!-- <img src="img\index-credit.jpg" width="465" height="285" alt="Кредит"> -->
               </section>
             </div>
           </div>

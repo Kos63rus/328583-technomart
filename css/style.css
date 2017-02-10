@@ -20,6 +20,7 @@ body {
 }
 
 .btn {
+  display: block;
   box-sizing: border-box;
   min-height: 38px;
   padding-top: 10px;
@@ -874,6 +875,7 @@ body {
   margin-left: 30px;
   font-size: 30px;
   line-height: 36px;
+  font-weight: normal;
   text-transform: uppercase;
   color: #32425c;
 }
@@ -1050,6 +1052,10 @@ body {
   box-shadow: 0 4px 10px 0 rgba(41, 52, 73, 0.5);
 }
 
+.popular-producers-list a:active {
+  opacity: 0.3;
+}
+
 .popular-producers-list a:nth-of-type(1),
 .popular-producers-list a:nth-of-type(2),
 .popular-producers-list a:nth-of-type(3),
@@ -1061,47 +1067,71 @@ body {
   margin-right: 0;
 }
 
+/*Блок сервисов*/
+
+.services-block-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  width: 1200px;
+  min-height: 522px;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #f1f5f7;
+  outline: 1px solid green;
+}
+
 .index-services {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
-  min-height: 520px;
+  margin: 0 auto;
   outline: 1px solid orange;
 }
 
 .services-title-block {
   display: flex;
   flex-wrap: wrap;
-  margin-top: 65px;
-  outline: 1px solid green;
+  margin-top: 58px;
+  /*outline: 1px solid green;*/
 }
 
 .services-title {
   width: 940px;
   min-height: 33px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 25px;
   padding: 0;
-  outline: 1px solid red;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #000000;
+  /*outline: 1px solid red;*/
 }
 
 .services-title-block > p {
-  width: 480px;
+  width: 400px;
   min-height: 40px;
   margin: 0;
   margin-bottom: 25px;
   padding: 0;
-  outline: 1px solid red;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  /*outline: 1px solid red;*/
 }
 
-.index-servises-menu {
+/*Табы для блока сервисов*/
+
+.index-servises-tabs {
   display: flex;
   width: 940px;
-  min-height: 280px;
+  min-height: 279px;
   outline: 1px solid green;
 }
 
-.services-list {
+.tab-controls {
   align-self: flex-start;
   width: 240px;
   margin: 0;
@@ -1111,9 +1141,21 @@ body {
   outline: 1px solid red;
 }
 
-.tab {
-  display: flex;
+.services-tabs {
+  position: relative;
   width: 620px;
+  min-height: 279px;
+}
+
+.tab {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.delivery-content {
+  width: 100%;
+  min-height: 279px;
   margin: 0;
   padding: 0;
   outline: 1px solid blue;
@@ -1124,50 +1166,133 @@ body {
   outline: 1px solid red;
 }
 
-/*Табы для блока сервисов*/
-.services-tabs section {
+/*Механика работы табов*/
+.tab {
   display: none;
 }
 
-.tabs input {
-  display: none;
-}
-
-#tab-1:checked ~ #content-1,
-#tab-2:checked ~ #content-2,
-#tab-3:checked ~ #content-3 {
+#tab-1:checked ~ .services-tabs .tab:nth-of-type(1) {
   display: block;
 }
+/*^^Механика работы табов^^*/
+
 /*^^Табы для блока сервисов^^*/
 
 .index-about-us-block {
   display: flex;
   width: 940px;
-  margin-top: 80px;
+  min-height: 460px;
+  margin-top: 77px;
+  color: #000000;
+  background-color: #ffffff;
   outline: 1px solid orange;
 }
+
+/*Компания Техномарт*/
 
 .about-us {
   width: 540px;
   min-height: 370px;
   margin-right: 100px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .about-us-title {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: normal;
+  text-transform: uppercase;
+  quotes: "\00ab" "\00bb";
 }
+
+.about-us p {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.about-us p:nth-of-type(1) {
+  margin-bottom: 34px;
+}
+
+.about-us p:nth-of-type(2) {
+  width: 400px;
+  margin-bottom: 25px;
+}
+
+.transport-comp-list {
+  margin: 0;
+  margin-bottom: 37px;
+  padding: 0;
+  padding-left: 36px;
+  list-style: none;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+}
+
+.transport-comp-list li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.transport-comp-list li::before {
+  position: absolute;
+  top: 9px;
+  left: -36px;
+  content: "";
+  width: 25px;
+  height: 2px;
+  background-color: #fb565a;
+}
+
+.transport-comp-list li:last-child {
+  margin-bottom: 0;
+}
+
+.about-us .about-us-button {
+  width: 220px;
+}
+
+/*Контакты*/
 
 .contacts {
   width: 300px;
   min-height: 370px;
-  outline: 1px solid green;
+  /*outline: 1px solid green;*/
 }
 
 .contacts-title {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.contacts p {
+  width: 200px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+}
+
+.contacts img {
+  width: 300px;
+  height: 158px;
+  margin-bottom: 37px;
 }
 
 .main-footer {

@@ -163,11 +163,13 @@ body {
   width: 270px;
 }
 
-.index-form {
+.index-form,
+.catalog-form {
    position: relative;
 }
 
-.index-form input {
+.index-form input,
+.catalog-form input {
   padding-top: 11px;
   padding-bottom: 11px;
   padding-left: 45px;
@@ -181,19 +183,23 @@ body {
   border: none;
 }
 
-.index-form input::-webkit-input-placeholder {
+.index-form input::-webkit-input-placeholder,
+.catalog-form input::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.index-form input:focus::-webkit-input-placeholder {
+.index-form input:focus::-webkit-input-placeholder,
+.catalog-form input:focus::-webkit-input-placeholder {
   color: #000000;
 }
 
-.index-form input[type="text"]::-moz-placeholder {
+.index-form input[type="text"]::-moz-placeholder,
+.catalog-form input[type="text"]::-moz-placeholder {
   color: #ffffff;
 }/* Firefox 19+ */
 
-.index-form input[type="text"]:-moz-placeholder {
+.index-form input[type="text"]:-moz-placeholder,
+.catalog-form input[type="text"]:-moz-placeholder {
   color: #ffffff;
 }/* Firefox 18- */
 

@@ -9,35 +9,35 @@
   </head>
   <body>
     <header class="main-header">
-      <ul class="header-top-block">
-        <div class="container">
-        <li>
-          <a href="index.html" title="Техномарт">Техномарт</a>
-        </li>
-        <li>
-          <form class="index-form" action="https://echo.htmlacademy.ru" method="post">
-            <label>
-              Поиск:
-              <input type="search" name="search" value="">
-            </label>
-          </form>
-        </li>
-        <li>
-          <a href="#" title="Закладки">Закладки: 0</a>
-        </li>
-        <li>
-          <a href="#" title="Корзина">Корзина: 10</a>
-        </li>
-        <li>
-          <a href="#" title="Оформить заказ">Оформить заказ</a>
-        </li>
-        </div>
-      </ul>
+      <div class="header-top-block-wrapper">
+        <ul class="header-top-block">
+          <li>
+            <a href="index.html" title="Техномарт">Техномарт</a>
+           </li>
+          <li>
+            <form class="catalog-form" action="https://echo.htmlacademy.ru" method="post">
+              <input type="search" name="search" value="" placeholder="Поиск:">
+              <span class="search-icon"></span>
+            </form>
+          </li>
+          <li>
+            <a href="#" title="Закладки">Закладки: 0</a>
+          </li>
+          <li>
+            <a href="#" title="Корзина">Корзина: 0</a>
+          </li>
+          <li>
+            <a href="#" title="Оформить заказ">
+              <span class="index-сheckout">Оформить заказ</span>
+            </a>
+          </li>
+        </ul>
+      </div>
       <div class="container">
         <div class="header-middle-block">
           <div class="header-middle-block-desc">
             <p>Интернет-магазин
-              строительных материалов
+              строительных материалов<br>
               и инструментов для ремонта</p>
           </div>
           <div class="header-middle-block-contacts">
@@ -49,35 +49,22 @@
             </div>
           </div>
           <div class="header-middle-block-registration">
-            <a href="#" title="Профиль">Равшан Джамшутович</a>
-            <a href="#" title="Мои заказы">Мои заказы</a>
-            <a href="#" title="Личный кабинет">Личный кабинет</a>
+            <div class="login-wrapper">
+              <a class="login" href="#" title="Войти">Войти</a>
+            </div>
+            <div class="registration-wrapper">
+              <a class="registration" href="#" title="Регистрация">Регистрация</a>
+            </div>
           </div>
         </div>
         <nav class="main-navigation">
-          <ul class="main-navigation-list">
-            <li>
-              <a href="#" title="Главная">Главная</a>
-            </li>
-            <li>
-              <a href="#" title="Компания">Компания</a>
-            </li>
-            <li>
-              <a href="#" title="Каталог">Каталог</a>
-            </li>
-            <li>
-              <a href="#" title="Новости">Новости</a>
-            </li>
-            <li>
-              <a href="#" title="Спецпредложения">Спецпредложения</a>
-            </li>
-            <li>
-              <a href="#" title="Доставка">Доставка</a>
-            </li>
-            <li>
-              <a href="#" title="Контакты">Контакты</a>
-            </li>
-          </ul>
+          <a href="#" title="Главная">Главная</a>
+          <a href="#" title="Компания">Компания</a>
+          <a href="#" title="Каталог">Каталог</a>
+          <a href="#" title="Новости">Новости</a>
+          <a href="#" title="Спецпредложения">Спецпредложения</a>
+          <a href="#" title="Доставка">Доставка</a>
+          <a href="#" title="Контакты">Контакты</a>
         </nav>
       </div>
     </header>

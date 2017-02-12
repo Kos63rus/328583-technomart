@@ -2050,7 +2050,7 @@ body {
   margin-top: -5px;
   margin-right: 20px;
   width: 220px;
-  outline: 1px solid orange;
+  /*outline: 1px solid orange;*/
 }
 
 .range-filter {

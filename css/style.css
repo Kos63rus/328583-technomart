@@ -1904,7 +1904,7 @@ body {
   display: flex;
   width: 940px;
   min-height: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -1995,9 +1995,48 @@ body {
   background: url("../img/spritesheet.png") no-repeat -5px -176px;
 }
 
-.sorting-list a {
+.sorting-list .price-sort,
+.sorting-list .type-sort,
+.sorting-list .function-sort {
   color: rgba(0, 0, 0, 0.3);
   text-decoration: none;
+  border-bottom: 1px dotted #ee3643;
+}
+
+.sorting-list .price-sort:hover,
+.sorting-list .type-sort:hover,
+.sorting-list .function-sort:hover {
+  color: #000000;
+  text-decoration: none;
+  border-bottom: 1px solid #ee3643;
+}
+
+.sorting-list .price-sort:active,
+.sorting-list .type-sort:active,
+.sorting-list .function-sort:active {
+  color: #ee3643;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.sorting-list .active {
+  color: #ee3643;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.sorting-list .active:hover {
+  color: #ee3643;
+  text-decoration: none;
+  border-bottom: none;
+}
+
+.sorting-list .active-sort-inc {
+  background-position: -24px -175.5px;
+}
+
+.sorting-list .active-sort-dec {
+  background-position: -5px -176px;
 }
 
 .catalog-content-container {
@@ -2008,9 +2047,10 @@ body {
 .filters-box {
   display: flex;
   align-self: flex-start;
+  margin-top: -5px;
   margin-right: 20px;
   width: 220px;
-  /*outline: 1px solid orange;*/
+  outline: 1px solid orange;
 }
 
 .range-filter {
@@ -2073,7 +2113,7 @@ body {
 }
 
 .range-controls .max-toggle {
-  left: 146px;
+  left: 160px;
 }
 
 .price-controls {
@@ -2138,7 +2178,7 @@ body {
   min-height: 20px;
   margin: 0;
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -2156,7 +2196,7 @@ body {
   width: 220px;
   min-height: 180px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 22px;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 15px;
@@ -2171,7 +2211,7 @@ body {
 .producers-list-checkbox,
 .power-supply-radiobtn {
   position: relative;
-  padding-left: 30px;
+  padding-left: 34px;
   cursor: pointer;
 }
 
@@ -2278,8 +2318,8 @@ body {
   width: 220px;
   min-height: 20px;
   margin: 0;
-  margin-top: 20px;
-  margin-bottom: 15px;
+  margin-top: 22px;
+  margin-bottom: 18px;
   padding: 0;
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 17px;
@@ -2295,7 +2335,7 @@ body {
   flex-wrap: wrap;
   align-content: space-between;
   width: 220px;
-  min-height: 70px;
+  min-height: 60px;
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
@@ -2347,24 +2387,60 @@ body {
 }
 
 .catalog-pagination {
+  display: flex;
+  justify-content: flex-start;
   width: 700px;
-  min-height: 40px;
+  min-height: 38px;
   margin-left: 240px;
   margin-bottom: 60px;
-  outline: 1px solid orange;
+  /*outline: 1px solid orange;*/
 }
 
-.catalog-pagination-list {
-  display: flex;
-  margin: 0;
-  padding: 0;
+.btn-page-num {
+  width: 38px;
+  margin-right: 10px;
+}
+
+.btn-page-next {
+  width: 140px;
+}
+
+.current {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.current a{
+  color: #ffffff;
+}
+
+.current:hover {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.current a:active {
+  color: #ffffff;
+  background-color: #ee3643;
+  border-color: #ee3643;
+}
+
+.catalog-tool-desc-wrapper {
+  width: 1200px;
+  margin: 0 auto;
+  color: #000000;
+  background-color: #f2f6f8;
+  /*outline: 1px solid red;*/
 }
 
 .catalog-tool-desc {
   display: flex;
   flex-wrap: wrap;
   width: 940px;
-  outline: 1px solid orange;
+  padding-bottom: 70px;
+  /*outline: 1px solid orange;*/
 }
 
 .tool-desc-title {
@@ -2372,15 +2448,22 @@ body {
   min-height: 33px;
   margin: 0;
   margin-top: 60px;
-  margin-bottom: 30px;
-  outline: 1px solid green;
+  margin-bottom: 25px;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: normal;
+  text-transform: uppercase;
+  /*outline: 1px solid green;*/
 }
 
-.catalog-tool-desc > p {
+.catalog-tool-desc p {
   margin: 0;
   padding: 0;
-  margin-bottom: 70px;
-  outline: 1px solid green;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: normal;
+  /*outline: 1px solid green;*/
 }
 
 /*Стили спрайта*/

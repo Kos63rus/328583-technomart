@@ -1,6 +1,5 @@
 body {
   min-width: 1200px;
-  min-height: 3150px;
   margin: 0;
   padding: 0;
   font-size: 17px;
@@ -11,6 +10,13 @@ body {
   background-color: #ffffff;
 }
 
+.index-body {
+  min-height: 3150px;
+}
+
+.catalog-body {
+  min-height: 2250px;
+}
 /*Широко применяемые стили*/
 .container {
   width: 940px;
@@ -34,6 +40,7 @@ body {
   color: #ffffff;
   background-color: #ee3643;
   border-radius: 3px;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -211,28 +218,28 @@ body {
   border: none;
 }
 
-.index-form input::-webkit-input-placeholder,
-.catalog-form input::-webkit-input-placeholder {
+.index-form input[type="search"]::-webkit-input-placeholder,
+.catalog-form input[type="search"]::-webkit-input-placeholder {
   color: #ffffff;
 }
 
-.index-form input:focus::-webkit-input-placeholder,
-.catalog-form input:focus::-webkit-input-placeholder {
+.index-form input[type="search"]:focus::-webkit-input-placeholder,
+.catalog-form input[type="search"]:focus::-webkit-input-placeholder {
   color: #000000;
 }
 
-.index-form input[type="text"]::-moz-placeholder,
-.catalog-form input[type="text"]::-moz-placeholder {
+.index-form input[type="search"]::-moz-placeholder,
+.catalog-form input[type="search"]::-moz-placeholder {
   color: #ffffff;
 }/* Firefox 19+ */
 
-.index-form input[type="text"]:-moz-placeholder,
-.catalog-form input[type="text"]:-moz-placeholder {
+.index-form input[type="search"]:-moz-placeholder,
+.catalog-form input[type="search"]:-moz-placeholder {
   color: #ffffff;
 }/* Firefox 18- */
 
-.index-form input[type="text"]:-ms-input-placeholder,
-.catalog-form input[type="text"]:-ms-input-placeholder {
+.index-form input[type="search"]:-ms-input-placeholder,
+.catalog-form input[type="search"]:-ms-input-placeholder {
   color: #ffffff;
 }
 
@@ -704,7 +711,7 @@ body {
   height: 10px;
   margin-left: -70px;
   text-align: center;
-  z-index: 1000;
+  z-index: 100;
   /*outline: 1px solid red;*/
 }
 
@@ -2465,6 +2472,189 @@ body {
   font-weight: normal;
   /*outline: 1px solid green;*/
 }
+
+/*Стили попапов*/
+.modal-write-us {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 430px;
+  margin-left: -310px;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 500;
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 9px;
+  right: 9px;
+  width: 21px;
+  height: 21px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: -2px;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.write-us-content {
+  display: flex;
+  flex-wrap: wrap;
+  box-sizing: border-box;
+  width: 460px;
+  min-height: 229px;
+  margin: 0 80px;
+  margin-top: 52px;
+  margin-bottom: 37px;
+  /*outline: 1px solid red;*/
+}
+
+.write-us-content .user-name-wrapper {
+  box-sizing: border-box;
+  width: 220px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  /*outline: 1px solid green;*/
+}
+
+.write-us-content .user-email-wrapper {
+  box-sizing: border-box;
+  width: 220px;
+  margin-bottom: 20px;
+  /*outline: 1px solid green;*/
+}
+
+.user-name-wrapper input[type="text"],
+.user-email-wrapper input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  height: 38px;
+  margin-top: 9px;
+  padding: 10px 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #999999;
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.user-name-wrapper input[type="text"]::-webkit-input-placeholder,
+.user-email-wrapper input[type="text"]::-webkit-input-placeholder,
+.user-name-wrapper input[type="text"]::-moz-placeholder,
+.user-email-wrapper input[type="text"]::-moz-placeholder,
+.user-name-wrapper input[type="text"]:-moz-placeholder,
+.user-email-wrapper input[type="text"]:-moz-placeholder,
+.user-name-wrapper input[type="text"]:-ms-input-placeholder,
+.user-email-wrapper input[type="text"]:-ms-input-placeholder {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #999999;
+}
+
+.write-us-content .user-letter-wrapper {
+  width: 460px;
+  /*outline: 1px solid green;*/
+}
+
+.user-letter-wrapper textarea {
+  box-sizing: border-box;
+  width: 100%;
+  height: 114px;
+  margin-top: 9px;
+  padding: 10px 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: normal;
+  color: #999999;
+  background-color: #ffffff;
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.write-us-form .write-us-send-btn-wrapper {
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 112px;
+  padding: 37px 80px;
+  color: #000000;
+  background-color: #f1f1f1;
+  /*outline: 1px solid orange;*/
+}
+
+.write-us-send-btn-wrapper .modal-send-btn {
+  box-sizing: border-box;
+  width: 100%;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 940px;
+  height: 446px;
+  margin-left: -470px;
+  color: #000000;
+  background: #ffffff;
+  box-shadow: 0 0 16px 8px rgba(35, 31, 32, 0.50);
+  z-index: 500;
+}
+
+.modal-map img {
+  max-width: 940px;
+  max-height: 446px;
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 490;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
 
 /*Стили спрайта*/
 .sprite {

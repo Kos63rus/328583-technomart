@@ -8,7 +8,7 @@
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="index-body">
     <header class="main-header">
       <div class="header-top-block-wrapper">
         <ul class="header-top-block">
@@ -364,5 +364,38 @@
         </div>
       </div>
     </footer>
+    <div class="modal-write-us">
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us-content">
+          <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+            <div class="user-name-wrapper">
+              <label class="user-name">
+                <div>Ваше имя:</div>
+                <input type="text" name="username" placeholder="Представьтесь, пожалуйста">
+              </label>
+            </div>
+            <div class="user-email-wrapper">
+              <label class="user-email">
+                <div>Ваш e-mail:</div>
+                <input type="text" name="useremail" placeholder="Для отправки ответа">
+              </label>
+            </div>
+            <div class="user-letter-wrapper">
+              <label class="user-letter">
+                <div>Текст письма:</div>
+                <textarea name="userletter" rows="6">В свободной форме</textarea>
+              </label>
+            </div>
+        </div>
+        <div class="write-us-send-btn-wrapper">
+          <button class="btn modal-send-btn" type="submit" title="Отправить">Отправить</button>
+        </div>
+      </form>
+    </div>
+    <div class="modal-map">
+      <button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+      <img src="img/index-map-big.jpg" width="940" height="446" alt="Карта">
+    </div>
+    <div class="modal-overlay"></div>
   </body>
 </html>

@@ -54,7 +54,7 @@ body {
 .btn-catalog {
   display: block;
   box-sizing: border-box;
-  min-height: 38px;
+  height: 38px;
   padding-top: 10px;
   padding-bottom: 10px;
   font-family: "PT Sans", "Arial", sans-serif;
@@ -2360,6 +2360,10 @@ body {
   width: 140px;
 }
 
+.catalog-show:active {
+  outline: none;
+}
+
 .catalog-tools {
   display: inline-block;
   vertical-align: top;
@@ -2642,6 +2646,81 @@ body {
 .modal-map img {
   max-width: 940px;
   max-height: 446px;
+}
+
+.modal-item-add-to-basket {
+  display: none;
+  position: fixed;
+  top: 120px;
+  left: 50%;
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 282px;
+  margin-left: -310px;
+  font-size: 30px;
+  line-height: 33px;
+  font-weight: normal;
+  color: #000000;
+  background-color: #ffffff;
+  border-top: 7px solid #ee3643;
+  box-shadow: 0 20px 40px 0 rgba(0, 0, 0, 0.75);
+  z-index: 500;
+}
+
+.modal-item-add-to-basket .message-wrapper {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 66px;
+  margin: 0 80px;
+  margin-top: 48px;
+  padding: 16px 0;
+  padding-left: 99px;
+  margin-bottom: 50px;
+  /*outline: 1px solid red;*/
+}
+
+.modal-item-add-to-basket .message-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 66px;
+  height: 66px;
+  background: url("../img/icon-catalog-checkmark.png") no-repeat;
+}
+
+.item-add-to-basket-btn-wrapper {
+  display: flex;
+  box-sizing: border-box;
+  width: 620px;
+  min-height: 112px;
+  padding: 37px 80px;
+  color: #000000;
+  background-color: #f1f1f1;
+  /*outline: 1px solid orange;*/
+}
+
+.item-add-to-basket-btn-wrapper .modal-checkout-btn {
+  box-sizing: border-box;
+  width: 220px;
+  margin-right: 20px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  border: none;
+}
+
+.item-add-to-basket-btn-wrapper .modal-continue {
+  box-sizing: border-box;
+  width: 220px;
+  font-family: "Cuprum", "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.item-add-to-basket-btn-wrapper .modal-checkout-btn:active,
+.item-add-to-basket-btn-wrapper .modal-continue:active {
+  outline: none;
 }
 
 .modal-overlay {

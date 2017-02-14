@@ -17,6 +17,12 @@ body {
 .catalog-body {
   min-height: 2250px;
 }
+
+img {
+  width: 100%;
+  height: auto;
+}
+
 /*Широко применяемые стили*/
 .container {
   width: 940px;
@@ -1838,11 +1844,12 @@ body {
 
 .breadcrumbs {
   display: flex;
-  align-items: center;
+  box-sizing: border-box;
   width: 940px;
   min-height: 59px;
   margin: 0;
   padding: 0;
+  padding: 20px 0;
   list-style: none;
   /*outline: 1px solid orange;*/
 }
